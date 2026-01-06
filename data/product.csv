@@ -1,0 +1,13 @@
+id,sub_category_id,name,price
+1,1,Table and chair set,299.99
+2,1,Patio Heater,199.99
+3,2,Curtains,89.99
+4,2,Cushions,19.99
+5,3,50 inch 4K TV,399.99
+6,3,TV Soundbar,99.99
+7,4,Portable Bluetooth Speaker,49.99
+8,4,Premium Smart Speaker,399.99
+9,5,Mens Jeans,39.99
+10,5,Mens Shorts,19.99
+11,6,Womens Jeans,39.99
+12,6,Blouse,24.99
