@@ -22,7 +22,7 @@ resource "google_bigquery_dataset_iam_member" "service_account_source_editor" {
 }
 
 resource "google_bigquery_dataset_iam_member" "service_account_target_editor" {
-  dataset_id = var.source_dataset_id
+  dataset_id = var.target_dataset_id
   role       = "roles/bigquery.dataEditor"
   member     = "serviceAccount:${google_service_account.dataform_example_service_account.email}"
 }

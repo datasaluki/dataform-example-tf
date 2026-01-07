@@ -75,7 +75,7 @@ module "product_table" {
   dataset_id    = google_bigquery_dataset.source_data.dataset_id
   table_id      = "product"
   source_uri    = "gs://${google_storage_bucket.source_data_bucket.name}/product/*.csv"
-  fields        = [{ "name" : "id", "type" : "int64" }, { "name" : "sub_category_id", "type" : "int64" }, { "name" : "name", "type" : "string" }, { "name" : "price", "type" : "float64" }]
+  fields        = [{ "name" : "id", "type" : "int64" }, { "name" : "sub_category_id", "type" : "int64" }, { "name" : "name", "type" : "string" }, { "name" : "price", "type" : "numeric" }]
 }
 
 module "courier_table" {
