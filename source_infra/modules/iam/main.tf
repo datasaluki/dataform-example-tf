@@ -27,6 +27,12 @@ resource "google_bigquery_dataset_iam_member" "service_account_target_editor" {
   member     = "serviceAccount:${google_service_account.dataform_example_service_account.email}"
 }
 
+resource "google_bigquery_dataset_iam_member" "service_account_assertion_editor" {
+  dataset_id = var.assertion_dataset_id
+  role       = "roles/bigquery.dataEditor"
+  member     = "serviceAccount:${google_service_account.dataform_example_service_account.email}"
+}
+
 # Grant access to the dataform service account to use the custom service account, Without this, the custom account can't be used to execute workflows.
 resource "google_service_account_iam_member" "dataform_service_account_user_access" {
   service_account_id = google_service_account.dataform_example_service_account.name

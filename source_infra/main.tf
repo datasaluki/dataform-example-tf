@@ -36,7 +36,8 @@ module "target_data" {
 }
 
 module "iam" {
-  source            = "./modules/iam"
-  source_dataset_id = module.source_data.source_dataset_id
-  target_dataset_id = module.target_data.target_dataset_id
+  source               = "./modules/iam"
+  source_dataset_id    = module.source_data.source_dataset_id
+  target_dataset_id    = module.target_data.target_dataset_id
+  assertion_dataset_id = module.target_data.assertion_dataset_id
 }

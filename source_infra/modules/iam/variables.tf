@@ -7,3 +7,8 @@ variable "target_dataset_id" {
   type        = string
   description = "The name of the target dataset to grant access to"
 }
+
+variable "assertion_dataset_id" {
+  type        = string
+  description = "The name of the dataset to store assertions in to grant access to"
+}
