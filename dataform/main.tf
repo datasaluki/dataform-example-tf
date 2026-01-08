@@ -60,7 +60,7 @@ resource "google_dataform_repository_release_config" "release" {
 
   name          = "main-release-config"
   git_commitish = "main"
-  cron_schedule = "0 9 * * *"
+  cron_schedule = "0 7 * * *"
   time_zone     = "UTC"
 
   code_compilation_config {
