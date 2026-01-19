@@ -1,5 +1,5 @@
 # dataform-example-tf
-This is a sample project for setting up infrastructure for the dataform example using terraform.
+This is a sample project I put together to demonstrate setting up infrastructure for the dataform example using terraform.
 
 There are multiple terraform projects in this repository to enable setting up infrastructure.
 1. source_infra - Used to provision the infrastructure for the source data in BigQuery and the IAM accounts required for dataform.
