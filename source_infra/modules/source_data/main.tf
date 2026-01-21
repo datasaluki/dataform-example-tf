@@ -26,9 +26,10 @@ resource "google_storage_bucket_object" "source_file" {
 
 # Big Lake Tables
 resource "google_bigquery_dataset" "source_data" {
-  dataset_id  = "dataform_example_source"
-  description = "Source data for the dataform example"
-  location    = var.location
+  dataset_id                 = "dataform_example_source"
+  description                = "Source data for the dataform example"
+  location                   = var.location
+  delete_contents_on_destroy = true
 }
 
 resource "google_bigquery_connection" "biglake_connection" {
